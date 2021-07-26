@@ -1,4 +1,4 @@
 deployment:
     tasks:
         - export DEPLOYPATH=/home/ozcte0mg/public_html/
-        - /bin/cp -R my-app/build $DEPLOYPATH
+        - /bin/cp -R public/* $DEPLOYPATH
