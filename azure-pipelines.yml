@@ -15,10 +15,12 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+
 - script: |
     npm install
     npm run build
   displayName: 'npm install and build'
+  workingDirectory: '$(Build.SourcesDirectory)/my-app'
 
 - task: ArchiveFiles@2
   inputs:
