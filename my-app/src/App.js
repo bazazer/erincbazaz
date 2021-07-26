@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         {/* <Logo fill="red" stroke="green" /> */}
         <p>
-         Erin Bazaz
+         Erin C Bazaz
         </p>
       </header>
     </div>
