@@ -2,6 +2,9 @@
 # Build a Node.js project that uses React.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+variables:
+  uiSource: "my-app"
+  uiBuild: "$(uiSource)/build"
 
 trigger:
 - main
@@ -20,11 +23,16 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-  workingDirectory: '$(Build.SourcesDirectory)/my-app'
+  workingDirectory: '$(uiSource)'
   
-- task: CopyFiles@2
+- task: ArchiveFiles@2
+  displayName: Archive
   inputs:
-    targetFolder: '$(Build.ArtifactStagingDirectory)'  
+    rootFolderOrFile: "$(uiBuild)"
+    includeRootFolder: false
+    archiveType: "zip"
+    archiveFile: "$(Build.ArtifactStagingDirectory)/ui-$(Build.BuildId).zip"
+    replaceExistingArchive: true  
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
