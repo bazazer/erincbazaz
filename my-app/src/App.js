@@ -1,6 +1,5 @@
 // import { ReactComponent as Logo } from './images/Mountain.svg';
 import ErinLogo from './ErinLogo.tsx'
-import Navigation from './Navigation'
 
 import './App.css';
 
