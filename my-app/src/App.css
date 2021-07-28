@@ -34,11 +34,40 @@
   flex-direction: column;
   color: #005466;
   background-color: white;
-  border-radius: 5px;
-  width: 100px;
+  border-radius: 2px;
+  min-width: 100px;
   height: 40px;
   opacity: .4;
   margin: 10px;
+  box-shadow: 3px 3px #555555;
+}
+
+.skill1 {
+  animation: fadeInAnimation cubic-bezier(0.1, -0.6, 0.2, 0)  1s;
+}
+.skill2 {
+  animation: fadeInAnimation cubic-bezier(0.1, -0.6, 0.2, 0)  2.5s;
+}
+.skill3 {
+  animation: fadeInAnimation cubic-bezier(0.1, -0.6, 0.2, 0)  4s;
+}
+.skill4 {
+  animation: fadeInAnimation cubic-bezier(0.1, -0.6, 0.2, 0)  5.5s;
+}
+.skill5 {
+  animation: fadeInAnimation cubic-bezier(0.1, -0.6, 0.2, 0)  7s;
+}
+.skill6 {
+  animation: fadeInAnimation cubic-bezier(0.1, -0.6, 0.2, 0)  8.5s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .skills-container{
