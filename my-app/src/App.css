@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Source+Sans+Pro:wght@700&display=swap');
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
   background: linear-gradient(110deg, #005466 60%, #006980 60%);
   min-height: 100vh;
 }
@@ -15,8 +19,13 @@
   height: 40vmin;
   pointer-events: none;
 }
-.main-content {
-  margin-left: 100px;
+.main-page-content {
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  min-width: 80vw;
+  max-width: 80vw;
+
 }
 
 .my-name {
@@ -27,6 +36,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 .skills{
   display: flex;
@@ -84,4 +94,44 @@
 .content {
   color: white;
   font-size: 20px
+}
+
+.hidden {
+  display: none;
+}
+
+.squareLogo{
+  width:100px;
+  height: 100px;
+}
+
+/* Halloween Styles */
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background: url(./images/skeleton2.jpg);
+  background-size: cover;
+  background-position: top, left;
+  padding: 20px;
+  
+}
+
+.halloween-content 
+{
+  font-family: 'Source Sans Pro', sans-serif;
+  color:white;
+  font-size: 16px;
+  background-color: hsla(0, 100%, 90%, 0.3);
+  max-width: 80%;  
+  min-height: 300px;
+  border-radius: 10px;
+
+
+}
+
+.title {
+  color: white;
+  font-family: 'Creepster', cursive;
+  font-size: 60px;
+  letter-spacing: 2px;
 }
