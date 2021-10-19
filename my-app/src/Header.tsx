@@ -1,6 +1,4 @@
-import React, { FC, useState } from "react";
-import reactLogo from "./images/reactlogo.png";
-import coding from "./images/coding.png";
+import { FC, useState } from "react";
 import ErinLogo from "./ErinLogo";
 import MainContent from "./MainContent";
 
