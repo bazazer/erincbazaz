@@ -1,12 +1,7 @@
-import React, {useState } from 'react';
-import ErinLogo from './ErinLogo.tsx'
-import MainContent from './MainContent.tsx'
 import Header from './Header'
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Halloween from "./Halloween"
 

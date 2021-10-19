@@ -1,5 +1,4 @@
-import React, { FC, useState } from "react";
-import reactLogo from "./images/reactlogo.png";
+import { FC} from "react";
 import coding from "./images/coding.png";
 
 
@@ -11,7 +10,7 @@ const MainContent: FC<MainContentProps> = (props) => {
   return (
     <div>
       <div className={`main-page-content ${props.visible ? "" : "hidden"}`}>
-        <img className="squareLogo" src={coding} />
+        <img className="squareLogo" alt="" src={coding} />
 
       </div>
       <div id="developing-content" className="main-page-content hidden">
