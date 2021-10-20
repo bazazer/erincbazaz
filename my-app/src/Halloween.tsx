@@ -50,7 +50,7 @@ const Halloween = () => {
         <br/>
         4: 408 Clouser's CandyCorn Castle
         <br/>
-        5: 4013 Scott's Skeleton Shack
+        5: 413 Scott's Skeleton Shack
         <br/>
         6: 414 Gerboc's Gruesome Garage
         <br/>
