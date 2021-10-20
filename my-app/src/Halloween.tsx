@@ -1,4 +1,4 @@
-import { Button, Col, Container, Form, FormGroup, FormText } from "react-bootstrap";
+import { Button, Col, Form, FormGroup } from "react-bootstrap";
 import { Input, Label } from "reactstrap";
 import emailjs from 'emailjs-com';
 
