@@ -44,9 +44,8 @@ const Halloween = () => {
       </p>
       <h1>Schedule:</h1>
       <p>
-        <Button id="toggler">1: 402 Gasper's Graveyard</Button>
-
-        <UncontrolledCollapse toggler="#toggler">
+        <Button id="toggler1">1: 402 Gasper's Graveyard</Button>
+        <UncontrolledCollapse toggler="#toggler1">
         <CardBody>
         Food: 
         <br/>
@@ -61,10 +60,23 @@ const Halloween = () => {
         Hadleigh's haunted huggies
         </CardBody>
     </UncontrolledCollapse>
-
-       
         <br/>
-        2: 404 Hough's Haunted House
+        <Button id="toggler2">2: 404 Hough's Haunted House</Button>
+        <UncontrolledCollapse toggler="#toggler2">
+        <CardBody>
+        Food: 
+        <br/>
+        Pizza Roll Graveyard
+        <br/>
+        Drinks: 
+        <br/>
+        Wicked Whiskey Cider Cocktails Apple
+        <br/>
+       Cider Mummy Mocktails
+        <br/>
+        Robbie's Haunted Totino's
+        </CardBody>
+    </UncontrolledCollapse>
         <br/>
         3: 408 Rodger's Ravens Roost
         <br/>
