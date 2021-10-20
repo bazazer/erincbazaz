@@ -1,11 +1,11 @@
 import { Button, Col, Form, FormGroup } from "react-bootstrap";
-import { Input, Label } from "reactstrap";
+import { CardBody, Input, Label, UncontrolledCollapse } from "reactstrap";
 import emailjs from 'emailjs-com';
 import { useState } from "react";
 
 
 const Halloween = () => {
-  const [submitted, setSubmitted] = useState<Boolean>(false);
+  const [submitted, setSubmitted] = useState<boolean>(false);
 
 
   const sendEmail = (e: any) => {
@@ -31,7 +31,6 @@ const Halloween = () => {
   return (
         //<img className="skeleton" alt="" src={skeleton} />
 <div className="main-container">
-
     <h1 className="title horror-text">Dogwood Halloween<br/> House Crawl</h1>
     <h2 className="title2">When: Saturday October 30, 2021 7:00 - 11:00PM
     <br/>
@@ -45,7 +44,25 @@ const Halloween = () => {
       </p>
       <h1>Schedule:</h1>
       <p>
-        1: 402 Gasper's Graveyard
+        <Button id="toggler">1: 402 Gasper's Graveyard</Button>
+
+        <UncontrolledCollapse toggler="#toggler">
+        <CardBody>
+        Food: 
+        <br/>
+        Walking tacos, Mallory's magic munchies
+        <br/>
+        Drinks: 
+        <br/>
+        Matt's Monster Miller Lites
+        <br/>
+        Susies Spooky Smirnoff shots
+        <br/>
+        Hadleigh's haunted huggies
+        </CardBody>
+    </UncontrolledCollapse>
+
+       
         <br/>
         2: 404 Hough's Haunted House
         <br/>
