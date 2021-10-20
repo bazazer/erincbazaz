@@ -1,14 +1,15 @@
 import { Button, Col, Form, FormGroup } from "react-bootstrap";
 import { Input, Label } from "reactstrap";
 import emailjs from 'emailjs-com';
+import { useState } from "react";
 
 
 const Halloween = () => {
+  const [submitted, setSubmitted] = useState<Boolean>(false);
 
 
   const sendEmail = (e: any) => {
     e.preventDefault();
-    alert(e.target.email.value);
     
     const templateParams={
       address: e.target.address.value,
@@ -18,11 +19,13 @@ const Halloween = () => {
 
       emailjs.send('service_qm1qcbn', 'template_u0urazu', templateParams, 'user_VFbeJWAeR5yIrszWmb1Zf')
     .then(function(response) {
+      setSubmitted(true);
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
        console.log('FAILED...', error);
     });
   };
+  console.log(submitted);
 
 
   return (
@@ -62,6 +65,7 @@ const Halloween = () => {
       </p>
       <div>Are you a hosting house?</div>
     <div>Fill out form below to sign up for food/drink</div>
+    {!submitted ? 
     <Form onSubmit={sendEmail}>
       <FormGroup>
         <Label for="email">Email:</Label>
@@ -91,7 +95,8 @@ const Halloween = () => {
       </FormGroup>
       <Button type="submit">Submit</Button>
 
-      </Form>
+      </Form> : "thank you for submitting!"}
+    
     </div>
 </div>
   );
