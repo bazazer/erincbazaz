@@ -107,24 +107,37 @@
 
 /* Halloween Styles */
 .main-container {
-  width: 100vw;
-  height: 100vh;
-  background: url(./images/skeleton2.jpg);
+  /* width: 100vw;
+  height: 100vh; */
+  background-image: url(./images/skeleton2.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: top, left;
-  padding: 20px;
+  /* min-height: 1100px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:10px;
   
 }
 
+h1 {
+  padding-bottom:10px;
+  padding-top:0px;
+}
+
+
 .halloween-content 
 {
+  -webkit-text-stroke: .1px black;
   font-family: 'Source Sans Pro', sans-serif;
   color:white;
   font-size: 16px;
-  background-color: hsla(0, 100%, 90%, 0.3);
-  max-width: 80%;  
+  background-color: hsla(0, 0%, 100%, 0.3);
+  max-width: 100%;  
   min-height: 300px;
   border-radius: 10px;
+  padding: 10px;
+  margin-right: 0px;
 
 
 }
@@ -134,4 +147,138 @@
   font-family: 'Creepster', cursive;
   font-size: 60px;
   letter-spacing: 2px;
+}
+
+.title2 {
+  color: white;
+  font-family: 'Creepster', cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.horror-text {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: flickering;
+  animation-timing-function: step-start;
+  color: #912914;
+  font-family: 'Creepster', cursive;
+}
+
+@keyframes flickering {
+  0% {
+    color: #912914;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  5% {
+    color: #912914;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  10% {
+    color: #912914;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(-5deg);
+  }
+  15% {
+    color: #ccc;
+    text-shadow: none;
+    transform: skewX(-5deg);
+  }
+  20% {
+    color: #912914;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  25% {
+    color: #ccc;
+    text-shadow: 2px 2px #912914;
+    transform: skewX(0);
+  }
+  30% {
+    color: #ccc;
+    text-shadow: 2px 2px #912914;
+    transform: skewX(0);
+  }
+  35% {
+    color: #ccc;
+    text-shadow: 2px 2px #912914;
+    transform: skewX(0);
+  }
+  37% {
+    color: #ccc;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  40% {
+    color: #912914;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  45% {
+    color: #912914;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  50% {
+    color: #912914;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  55% {
+    color: #912914;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  60% {
+    color: #912914;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  65% {
+    color: #912914;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  68% {
+    color: #912914;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  70% {
+    color: #912914;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  75% {
+    color: #912914;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(2deg);
+  }
+  80% {
+    color: #912914;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(2deg);
+  }
+  85% {
+    color: #912914;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(2deg);
+  }
+  90% {
+    color: #912914;
+    text-shadow: none;
+    transform: skewX(0);
+  }
+  95% {
+    color: #912914;
+    text-shadow: 1px 1px #eee;
+    transform: skewX(0);
+  }
+  100% {
+    color: #912914;
+    text-shadow: none;
+    transform: skewX(0);
+  }
 }
