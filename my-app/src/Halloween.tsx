@@ -75,9 +75,9 @@ const Halloween = () => {
         <br/>
         Drinks: 
         <br/>
-        Wicked Whiskey Cider Cocktails Apple
+        Wicked Whiskey Cider Cocktails 
         <br/>
-       Cider Mummy Mocktails
+        Apple Cider Mummy Mocktails
         <br/>
         Robbie's Haunted Totino's
         </CardBody>
