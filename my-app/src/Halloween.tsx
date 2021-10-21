@@ -1,4 +1,4 @@
-import { Button, Col, Form, FormGroup } from "react-bootstrap";
+import { Button, Card, Col, Form, FormGroup } from "react-bootstrap";
 import { CardBody, Input, Label, UncontrolledCollapse } from "reactstrap";
 import emailjs from 'emailjs-com';
 import { useState } from "react";
@@ -44,8 +44,9 @@ const Halloween = () => {
       </p>
       <h1>Schedule:</h1>
       <p>
-      Stop 1: <Button id="toggler1"> 402 Gasper's Graveyard</Button>
+      Stop 1: <br/><Button id="toggler1"> 402 Gasper's Graveyard</Button>
         <UncontrolledCollapse toggler="#toggler1">
+        <Card className="card-slide">
         <CardBody>
         Food: 
         <br/>
@@ -61,10 +62,12 @@ const Halloween = () => {
         <br/>
         Hadleigh's haunted huggies
         </CardBody>
+        </Card>
     </UncontrolledCollapse>
         <br/>
-        Stop 2: <Button id="toggler2">404 Hough's Haunted House</Button>
+        Stop 2: <br/><Button id="toggler2">404 Hough's Haunted House</Button>
         <UncontrolledCollapse toggler="#toggler2">
+        <Card className="card-slide">
         <CardBody>
         Food: 
         <br/>
@@ -78,10 +81,12 @@ const Halloween = () => {
         <br/>
         Robbie's Haunted Totino's
         </CardBody>
+        </Card>
     </UncontrolledCollapse>
         <br/>
-        Stop 3: <Button id="toggler3">406 Rodger's Ravens Roost</Button>
+        Stop 3: <br/><Button id="toggler3">406 Rodger's Ravens Roost</Button>
         <UncontrolledCollapse toggler="#toggler3">
+        <Card className="card-slide">
         <CardBody>
         Food: 
         <br/>
@@ -91,6 +96,7 @@ const Halloween = () => {
         <br/>
         Dr. Jekyll's Jello Shots (alcoholic and non)
         </CardBody>
+        </Card>
     </UncontrolledCollapse>
         
         <br/>
