@@ -44,12 +44,14 @@ const Halloween = () => {
       </p>
       <h1>Schedule:</h1>
       <p>
-        <Button id="toggler1">1: 402 Gasper's Graveyard</Button>
+      Stop 1: <Button id="toggler1"> 402 Gasper's Graveyard</Button>
         <UncontrolledCollapse toggler="#toggler1">
         <CardBody>
         Food: 
         <br/>
-        Walking tacos, Mallory's magic munchies
+        Walking tacos
+        <br/>
+        Mallory's magic munchies
         <br/>
         Drinks: 
         <br/>
@@ -61,7 +63,7 @@ const Halloween = () => {
         </CardBody>
     </UncontrolledCollapse>
         <br/>
-        <Button id="toggler2">2: 404 Hough's Haunted House</Button>
+        Stop 2: <Button id="toggler2">404 Hough's Haunted House</Button>
         <UncontrolledCollapse toggler="#toggler2">
         <CardBody>
         Food: 
@@ -78,19 +80,32 @@ const Halloween = () => {
         </CardBody>
     </UncontrolledCollapse>
         <br/>
-        3: 408 Rodger's Ravens Roost
+        Stop 3: <Button id="toggler3">406 Rodger's Ravens Roost</Button>
+        <UncontrolledCollapse toggler="#toggler3">
+        <CardBody>
+        Food: 
         <br/>
-        4: 408 Clouser's CandyCorn Castle
+        Spooky Smoked Bacon-Wrapped Pickles
         <br/>
-        5: 413 Scott's Skeleton Shack
+        Drinks: 
         <br/>
-        6: 414 Gerboc's Gruesome Garage
+        Dr. Jekyll's Jello Shots (alcoholic and non)
+        </CardBody>
+    </UncontrolledCollapse>
+        
         <br/>
-        7: 415 Bazaz's Boogeyman Bungalow
+        
+        Stop 4: 408 Clouser's CandyCorn Castle
         <br/>
-        8: 418 Russell's Reaper Ranch
+        Stop 5: 413 Scott's Skeleton Shack
         <br/>
-        9: 417(9) Henry and Jay's Weiner Station
+        Stop 6: 414 Gerboc's Gruesome Garage
+        <br/>
+        Stop 7: 415 Bazaz's Boogeyman Bungalow
+        <br/>
+        Stop 8: 418 Russell's Reaper Ranch
+        <br/>
+        Stop 9: 417(9) Henry and Jay's Weiner Station
       </p>
       <div>Are you a hosting house?</div>
     <div>Fill out form below to sign up for food/drink</div>
@@ -98,15 +113,16 @@ const Halloween = () => {
     <Form onSubmit={sendEmail}>
       <FormGroup>
         <Label for="email">Email:</Label>
-        <Input type="email" name="email" id="email" placeholder="email"/>
+        <Input className="input" type="email" name="email" id="email" placeholder="email"/>
       </FormGroup>
       <FormGroup>
         <Label for="exampleSelect" >Dogwood Address:</Label>
         <Col sm={10}>
-          <Input type="select" name="address" id="exampleSelect">
+          <Input className="input" type="select" name="address" id="exampleSelect">
           <option hidden value="">Select an Address</option>
             <option>402 Dogwood</option>
             <option>404 Dogwood</option>
+            <option>406 Dogwood</option>
             <option>408 Dogwood</option>
             <option>413 Dogwood</option>
             <option>414 Dogwood</option>
@@ -120,7 +136,7 @@ const Halloween = () => {
       </FormGroup>
       <FormGroup>
         <Label for="exampleText">Drink and/or Food Signing Up For:</Label>
-        <Input type="textarea" name="message" id="exampleText" />
+        <Input  className="input" type="textarea" name="message" id="exampleText" />
       </FormGroup>
       <Button type="submit">Submit</Button>
 
