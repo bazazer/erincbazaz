@@ -124,8 +124,8 @@ const Halloween = () => {
          
         <br/>
 
-        Stop 7: <br/><Button id="toggler4">415 Bazaz's Boogieman Bungalow</Button>
-        <UncontrolledCollapse toggler="#toggler4">
+        Stop 7: <br/><Button id="toggler7">415 Bazaz's Boogieman Bungalow</Button>
+        <UncontrolledCollapse toggler="#toggler7">
         <Card className="card-slide">
         <CardBody>
         Food: 
