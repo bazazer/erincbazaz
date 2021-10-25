@@ -98,16 +98,50 @@ const Halloween = () => {
         </CardBody>
         </Card>
     </UncontrolledCollapse>
-        
         <br/>
-        
-        Stop 4: 408 Clouser's CandyCorn Castle
+        Stop 4: <br/><Button id="toggler4">408 Clouser's CandyCorn Castle</Button>
+        <UncontrolledCollapse toggler="#toggler4">
+        <Card className="card-slide">
+        <CardBody>
+        Food: 
         <br/>
+        Empanadas De Desembrada
+        <br/>
+        Drinks: 
+        <br/>
+        La Catarina Blood Orange Margaritas
+        <br/>
+        </CardBody>
+        </Card>
+    </UncontrolledCollapse>
+        <br/>
+        <br/>
+
         Stop 5: 413 Scott's Skeleton Shack
         <br/>
         Stop 6: 414 Gerboc's Gruesome Garage
         <br/>
-        Stop 7: 415 Bazaz's Boogeyman Bungalow
+         
+        <br/>
+
+        Stop 7: <br/><Button id="toggler4">415 Bazaz's Boogieman Bungalow</Button>
+        <UncontrolledCollapse toggler="#toggler4">
+        <Card className="card-slide">
+        <CardBody>
+        Food: 
+        <br/>
+        Petrifying Pork Meatballs
+        <br/>
+        Drinks: 
+        <br/>
+        Venomous Vampire Shots
+        <br/>
+
+        </CardBody>
+        </Card>
+    </UncontrolledCollapse>
+    <br/>
+
         <br/>
         Stop 8: 418 Russell's Reaper Ranch
         <br/>
