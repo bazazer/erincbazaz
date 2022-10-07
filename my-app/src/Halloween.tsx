@@ -1,24 +1,14 @@
-import { Button, Card, Col, Form, FormGroup } from "react-bootstrap";
-import { CardBody, Input, Label, UncontrolledCollapse } from "reactstrap";
+import { Button, Col, Form, FormGroup } from "react-bootstrap";
+import { Input, Label } from "reactstrap";
 import emailjs from 'emailjs-com';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import React from "react";
-import { HalloweenCrawl, IHalloweenStop, DogwoodAddresses } from "./Data";
+import { HalloweenCrawl, DogwoodAddresses } from "./Data";
 import HalloweenContent from "./HalloweenContent";
 
 
 const Halloween = () => {
   const [submitted, setSubmitted] = useState<boolean>(false);
-  const [activeTab, setActiveTab] = useState<string>();
-  const [expanded, setExpanded] = React.useState<string | false>(false);
-
-
-  const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false);
-    };
-
-
   const sendEmail = (e: any) => {
     e.preventDefault();
 
