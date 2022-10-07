@@ -17,7 +17,7 @@ function App() {
     </div>
     </Route>
     <Route exact path ="/DogwoodHalloween">
-    <div >
+    <div className="main-container">
     <Halloween/>
     </div>
     </Route>
