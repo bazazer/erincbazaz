@@ -5,11 +5,6 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { HalloweenCrawl, IHalloweenStop, DogwoodAddresses } from "./Data";
 import HalloweenContent from "./HalloweenContent";
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 const Halloween = () => {

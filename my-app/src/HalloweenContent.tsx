@@ -13,7 +13,7 @@ const HalloweenContent: React.FC<IProps> = (props) => {
     const [expanded, setExpanded] = React.useState<string | false>(false);
     const [stops, setStops] = React.useState<IHalloweenStop[]>();
 
-    React.useEffect(() => {setStops(props.stops)});
+    React.useEffect(() => {setStops(props.stops)}, [props.stops]);
 
     const handleChange =
         (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
@@ -22,7 +22,7 @@ const HalloweenContent: React.FC<IProps> = (props) => {
 console.log(props.stops);
     return ( <>
         <div>STOPS: </div>
-        <div>{stops != undefined ? stops.map((stop) => {
+        <div>{stops !== undefined ? stops.map((stop) => {
           return (<>
             <Accordion expanded={expanded === 'panel' + stop.stopNumber} onChange={handleChange('panel' + stop.stopNumber)}>
               <AccordionSummary
