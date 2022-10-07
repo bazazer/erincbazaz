@@ -108,13 +108,13 @@
 /* Halloween Styles */
 .main-container {
   width: 100vw;
-  height: 100vh; 
+  height: 100%; 
   background-image: url(./images/skeleton2.jpg);
   background-attachment: fixed;
   background-size: cover;
   /* min-height: 1100px; */
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-top:10px;
   
 }
