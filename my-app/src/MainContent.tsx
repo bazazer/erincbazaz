@@ -1,4 +1,3 @@
-import React from "react";
 import { FC} from "react";
 import coding from "./images/coding.png";
 

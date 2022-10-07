@@ -30,7 +30,7 @@ console.log(props.stops);
                 aria-controls="panel1bh-content"
                 id="panel1bh-header"
               >
-                <Typography sx={{ width: '33%', flexShrink: 0 }}>
+                <Typography sx={{ width: '40%', flexShrink: 0 }}>
                   {stop.neighbor.streetAddress}
                 </Typography>
                 <Typography sx={{ color: 'text.secondary' }}>{stop.neighbor.houseNickName}</Typography>
