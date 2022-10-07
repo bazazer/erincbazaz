@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import ErinLogo from "./ErinLogo";
 import MainContent from "./MainContent";
+import React from "react";
 
 
 interface MainContentProps {
