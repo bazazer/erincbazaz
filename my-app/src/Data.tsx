@@ -1,5 +1,6 @@
 export interface IHalloweenStop {
     stopNumber: number;
+    scheduledTime: string;
     neighbor: INeighbor;
     food: IConsumable[];
     drink: IConsumable[];
@@ -21,12 +22,13 @@ export interface IConsumable {
 export const HalloweenCrawl: IHalloweenStop[] = [
     {
         "stopNumber": 1,
+        "scheduledTime": "6:00PM",
         "neighbor": {
             "houseNickName": "Gaspers Graveyard",
             "firstName": "Susie",
             "lastName": "Gasper",
             "spouse": "Matt",
-            "streetAddress": "402 Dogwood"
+            "streetAddress": "402"
         },
         "food": [
             {
@@ -54,12 +56,13 @@ export const HalloweenCrawl: IHalloweenStop[] = [
     },
     {
         "stopNumber": 2,
+        "scheduledTime": "6:30PM",
         "neighbor": {
             "houseNickName": "Hough's Haunted House",
             "firstName": "Andrea",
             "lastName": "Hough",
             "spouse": "Rob",
-            "streetAddress": "404 Dogwood"
+            "streetAddress": "404"
         },
         "food": [
             {
@@ -83,12 +86,13 @@ export const HalloweenCrawl: IHalloweenStop[] = [
     },
     {
         "stopNumber": 3,
+        "scheduledTime": "7:00PM",
         "neighbor": {
             "houseNickName": "Rodger's Ravens Roost",
             "firstName": "Lindsey",
             "lastName": "Rodger",
             "spouse": "Brian",
-            "streetAddress": "406 Dogwood"
+            "streetAddress": "406"
         },
         "food": [
             {
@@ -104,12 +108,13 @@ export const HalloweenCrawl: IHalloweenStop[] = [
     },
     {
         "stopNumber": 4,
+        "scheduledTime": "7:30PM",
         "neighbor": {
             "houseNickName": "Clouser's CandyCorn Castle",
             "firstName": "Scott",
             "lastName": "Clouser",
             "spouse": "",
-            "streetAddress": "408 Dogwood"
+            "streetAddress": "408"
         },
         "food": [
             {
@@ -125,12 +130,13 @@ export const HalloweenCrawl: IHalloweenStop[] = [
     },
     {
         "stopNumber": 5,
+        "scheduledTime": "8:00PM",
         "neighbor": {
             "houseNickName": "Scott's Skeleton Shack",
             "firstName": "Julie",
             "lastName": "Scott",
             "spouse": "Eli",
-            "streetAddress": "413 Dogwood"
+            "streetAddress": "413"
         },
         "food": [
             {
@@ -158,12 +164,13 @@ export const HalloweenCrawl: IHalloweenStop[] = [
     },
     {
         "stopNumber": 6,
+        "scheduledTime": "8:30PM",
         "neighbor": {
             "houseNickName": "Gerboc's Gruesome Garage",
             "firstName": "Kacie",
             "lastName": "Gerboc",
             "spouse": "Bryce",
-            "streetAddress": "414 Dogwood"
+            "streetAddress": "414"
         },
         "food": [
             {
@@ -191,12 +198,13 @@ export const HalloweenCrawl: IHalloweenStop[] = [
     },
     {
         "stopNumber": 7,
+        "scheduledTime": "9:00PM",
         "neighbor": {
             "houseNickName": "Bazaz's Boogieman Bungalow",
             "firstName": "Erin",
             "lastName": "Bazaz",
             "spouse": "Rick",
-            "streetAddress": "415 Dogwood"
+            "streetAddress": "415"
         },
         "food": [
             {
@@ -212,12 +220,13 @@ export const HalloweenCrawl: IHalloweenStop[] = [
     },
     {
         "stopNumber": 8,
+        "scheduledTime": "9:30PM",
         "neighbor": {
             "houseNickName": "Russell's Reaper Ranch",
             "firstName": "Brandy",
             "lastName": "Russell",
             "spouse": "Alex",
-            "streetAddress": "418 Dogwood"
+            "streetAddress": "418"
         },
         "food": [
             {
@@ -245,12 +254,13 @@ export const HalloweenCrawl: IHalloweenStop[] = [
     },
     {
         "stopNumber": 9,
+        "scheduledTime": "10:00PM",
         "neighbor": {
             "houseNickName": "Henry and Jay's Weiner Station",
             "firstName": "Henry and Jay",
             "lastName": "",
             "spouse": "",
-            "streetAddress": "417 Dogwood"
+            "streetAddress": "417"
         },
         "food": [
             {

@@ -18,7 +18,7 @@ const Halloween = () => {
       message: e.target.message.value
     }
 
-    emailjs.send('service_qm1qcbn', 'template_u0urazu', templateParams, 'user_VFbeJWAeR5yIrszWmb1Zf')
+    emailjs.send('service_qm1qcbn', 'template_u0urazu', templateParams, 'JbEB3zhHGlfyNplxh')
       .then(function (response) {
         setSubmitted(true);
         console.log('SUCCESS!', response.status, response.text);
@@ -35,7 +35,7 @@ const Halloween = () => {
     <div className="main-container">
       <div className="halloween-titles">
       <h1 className="title horror-text">Dogwood Halloween House Crawl</h1>
-      <h2 className="title2">When: Saturday October 30, 2021 7:00 - 11:00PM
+      <h2 className="title2">When: Friday October 28, 2022 6:00PM - 12:00AM
         <br />
         Where: Dogwood Lane (Haunted Hill)
       </h2>

@@ -30,10 +30,11 @@ console.log(props.stops);
                 aria-controls="panel1bh-content"
                 id="panel1bh-header"
               >
-                <Typography sx={{ width: '40%', flexShrink: 0 }}>
+                <Typography sx={{ width: '10%', flexShrink: 0 }}>
                   {stop.neighbor.streetAddress}
                 </Typography>
-                <Typography sx={{ color: 'text.secondary' }}>{stop.neighbor.houseNickName}</Typography>
+                <Typography sx={{ width: '30%', color: 'text.secondary' }}>{stop.neighbor.houseNickName}</Typography>
+                <Typography sx={{ color: 'text.secondary' }}>{stop.scheduledTime}</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
